@@ -2,7 +2,7 @@
 
 exports[`BookCard should render book card with respective children 1`] = `
 <div
-  className="card-body"
+  className=""
 >
   <div
     className="card-image"
