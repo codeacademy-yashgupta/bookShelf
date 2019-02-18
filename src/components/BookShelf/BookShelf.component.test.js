@@ -11,8 +11,8 @@ describe('BookShelf', () => {
     expect(tree).toMatchSnapshot();
   });
   it('componentDidMount should be called', () => {
-    const componentDidMountSpy = jest.spyOn(BookShelf.prototype, 'componentDidMount');
-    const wrapper = shallow(<BookShelf />);
+    jest.spyOn(BookShelf.prototype, 'componentDidMount');
+    shallow(<BookShelf />);
     expect(BookShelf.prototype.componentDidMount).toHaveBeenCalled();
   });
 });

@@ -25,13 +25,14 @@ class GroupBookCards extends Component {
     console.log(this.props);
     const { authorRows } = this.props;
     const rows = [];
-    authorRows.forEach((bookCard, index) => {
+    authorRows.forEach((bookCard) => {
       rows.push(<BookCard row={bookCard} />);
     });
+    const { author } = this.props;
     return (
       <div className="group-by-author">
         <fieldset>
-          <legend>{this.props.author}</legend>
+          <legend>{author}</legend>
           <div className="all-cards">
             {rows}
           </div>

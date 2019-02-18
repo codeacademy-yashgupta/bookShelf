@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './BookShelf.css';
 import GroupBookCards from '../GroupBookCards/GroupBookCards.component';
-import mockData from '../../mockData.json';
 import { httpGet } from '../../helpers/httpGet';
 
 class BookShelf extends Component {
