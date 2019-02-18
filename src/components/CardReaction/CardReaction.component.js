@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './CardReaction.css';
 
 class CardReaction extends Component {
+  static defaultProps = {
+    liked: false,
+    onLikeClick: () => {
+      console.log('test');
+    },
+  }
+
   render() {
     const liked = this.props.liked ? './icons/heart-red.svg' : './icons/heart-black.svg';
 

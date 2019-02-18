@@ -34,6 +34,7 @@ exports[`BookCard should render book card with respective children 1`] = `
         <img
           alt="Press for like"
           className="icon-heart"
+          onClick={[Function]}
           src="./icons/heart-black.svg"
         />
       </div>
