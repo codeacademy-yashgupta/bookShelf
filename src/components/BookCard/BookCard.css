@@ -10,6 +10,17 @@
   color: orange;
 
 }
+.card-body1 {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 380px;
+  margin: 20px;
+  border: 1px solid black;
+  min-width: 300px;
+  background-color: orange;
+  color: black;
+}
 img {
   width: 320px;
 }

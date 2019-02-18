@@ -25,8 +25,13 @@ class GroupBookCards extends Component {
     console.log(this.props);
     const { authorRows } = this.props;
     const rows = [];
-    authorRows.forEach((bookCard) => {
-      rows.push(<BookCard row={bookCard} />);
+    authorRows.forEach((bookCard, index) => {
+      if (index % 2 === 0) {
+        rows.push(<BookCard styleApply="style1" row={bookCard} />);
+      }
+      if (index % 2 !== 0) {
+        rows.push(<BookCard styleApply="style2" row={bookCard} />);
+      }
     });
     const { author } = this.props;
     return (

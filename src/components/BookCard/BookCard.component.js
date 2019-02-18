@@ -11,9 +11,16 @@ class BookCard extends Component {
     },
   }
 
+  cssStyleName =''
+
   render() {
+    if (this.props.styleApply === 'style1') {
+      this.cssStyleName = 'card-body';
+    } else if (this.props.styleApply === 'style2') {
+      this.cssStyleName = 'card-body1';
+    }
     return (
-      <div className="card-body">
+      <div className={this.cssStyleName}>
         <div className="card-image">
           <img alt="" src="./images/cover_image.jpeg" />
         </div>
