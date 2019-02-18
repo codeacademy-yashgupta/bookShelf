@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import './BookCard.css';
-import axios from 'axios';
+import { httpPut } from '../../helpers/httpPut';
 import CardReaction from '../CardReaction/CardReaction.component';
 
 class BookCard extends Component {
@@ -18,9 +18,12 @@ class BookCard extends Component {
 
   cssStyleName =''
 
+  APIForUpdatingLike = 'http://localhost:3001/bookLike';
+
   onLikeClick = id => () => {
     this.setState({ liked: !this.state.liked });
-    axios.put('http://localhost:3001/bookLike', { bookId: id, like: this.state.liked }).then(value => console.log(value));
+
+    httpPut(this.APIForUpdatingLike, { bookId: id, like: this.state.liked });
   }
 
 
