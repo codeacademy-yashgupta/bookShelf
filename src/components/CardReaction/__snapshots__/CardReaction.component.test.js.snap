@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardReaction should render like button 1`] = `
+<div
+  className="card-reaction"
+>
+  <img
+    alt="Press for like"
+    className="icon-heart"
+    src="./icons/heart-black.svg"
+  />
+</div>
+`;
