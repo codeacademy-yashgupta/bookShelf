@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookCard should render book card with respective children 1`] = `
+<div
+  className="card-body"
+>
+  <div
+    className="card-image"
+  >
+    <img
+      alt=""
+      src="./images/cover_image.jpeg"
+    />
+  </div>
+  <div
+    className="card-text-title"
+  >
+    Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+  </div>
+  <div
+    className="card-footer"
+  >
+    <div
+      className="card-text-rating"
+    >
+      4.5
+    </div>
+    <div
+      className="card-like"
+    >
+      <div
+        className="card-reaction"
+      >
+        <img
+          alt="Press for like"
+          className="icon-heart"
+          src="./icons/heart-black.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,43 @@
+.card-body {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 380px;
+  margin: 20px;
+  border: 1px solid black;
+  min-width: 300px;
+  background-color: white;
+  color: orange;
+
+}
+img {
+  width: 320px;
+}
+.card-text-title {
+  padding: 10px;
+  height: 80px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+.card-text-rating {
+  height: 30px;
+  padding: 10px;
+}
+.card-image {
+  width: 320px;
+  overflow: hidden;
+  height: 200px;
+}
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: space-around
+}
+.card-like {
+  margin-left: 40%;
+}
