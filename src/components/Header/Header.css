@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+header h2 {
+  border-bottom: 4px solid white;
+  width: 100%;
+  line-height: 0.1em;
+  text-align: center;
+  margin-top: 40px;
+}
+header h2 span {
+  background: #505050;
+  /* padding: 0 9% 0 9%; */
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 38px;
+  padding: 10px;
+}
+
+.header-text p {
+  color: white;
+  font-style: italic;
+  font-size: 38px;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
