@@ -1,30 +1,29 @@
-// console.log(mockData);
-// const authorsArray = (Object.keys(mockData));
-// const rows = [];
-// const Auth = [];
-// authorsArray.forEach((author, index) => {
-//   Auth.push(
-//     (mockData[author]).forEach((book, index) => {
-//       rows.push(<BookCard key={book.name} author={book.Author} name={book.Name} rating={book.rating} />);
-//     }),
-//   );
-// });
-// console.log(Auth);
-// Books.forEach((element, index) => {
-//   rows.push(<BookCard key={element.name} author={element.Author} name={element.Name} rating={element.rating} />);
-// });
-
 import React, { Component } from 'react';
 import './BookShelf.css';
 import GroupBookCards from '../GroupBookCards/GroupBookCards.component';
 import mockData from '../../mockData.json';
+import { httpGet } from '../../helpers/httpGet';
 
 class BookShelf extends Component {
+  state= {
+    booksData: [],
+  }
+
+  APIForGettingBooksWithRating = 'http://localhost:3001/booksWithRating';
+
+  componentDidMount() {
+    httpGet(this.APIForGettingBooksWithRating)
+      .then((response) => {
+        this.setState({ booksData: response.data });
+      });
+  }
+
   render() {
-    const authorsArray = Object.keys(mockData);
+    const { booksData } = this.state;
+    const authorsArray = Object.keys(booksData);
     const rows = [];
     authorsArray.forEach((author) => {
-      rows.push(<GroupBookCards author={author} authorRows={mockData[author]} />);
+      rows.push(<GroupBookCards author={author} authorRows={booksData[author]} />);
     });
     return (
       <div className="main-body">

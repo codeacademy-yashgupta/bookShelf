@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header.component';
-import CardReaction from './components/CardReaction/CardReaction.component';
+import BookShelf from './components/BookShelf/BookShelf.component';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <br />
-        <CardReaction />
+        <BookShelf />
       </div>
     );
   }

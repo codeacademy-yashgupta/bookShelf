@@ -5,6 +5,12 @@ import './BookCard.css';
 import CardReaction from '../CardReaction/CardReaction.component';
 
 class BookCard extends Component {
+  static defaultProps = {
+    row: {
+      Author: 'J K Rowling', id: 10, Name: 'Harry Potter and the Sorcerers Stone (Harry Potter, #1)', rating: 4.45,
+    },
+  }
+
   render() {
     return (
       <div className="card-body">
@@ -12,11 +18,11 @@ class BookCard extends Component {
           <img alt="" src="./images/cover_image.jpeg" />
         </div>
         <div className="card-text-title">
-          Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+          {this.props.row.Name}
         </div>
         <div className="card-footer">
           <div className="card-text-rating">
-          4.5
+            {this.props.row.rating}
           </div>
           <div className="card-like">
             <CardReaction />

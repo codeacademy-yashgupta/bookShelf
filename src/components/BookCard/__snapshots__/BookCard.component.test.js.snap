@@ -23,7 +23,7 @@ exports[`BookCard should render book card with respective children 1`] = `
     <div
       className="card-text-rating"
     >
-      4.5
+      4.45
     </div>
     <div
       className="card-like"

@@ -5,9 +5,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
   className="group-by-author"
 >
   <fieldset>
-    <legend>
-      J.K Rowling
-    </legend>
+    <legend />
     <div
       className="all-cards"
     >
@@ -33,7 +31,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
           <div
             className="card-text-rating"
           >
-            4.5
+            4.45
           </div>
           <div
             className="card-like"
@@ -64,7 +62,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
         <div
           className="card-text-title"
         >
-          Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+          Harry Potter and the Chamber of Secrets (Harry Potter, #2)
         </div>
         <div
           className="card-footer"
@@ -72,7 +70,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
           <div
             className="card-text-rating"
           >
-            4.5
+            4.38
           </div>
           <div
             className="card-like"
@@ -103,7 +101,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
         <div
           className="card-text-title"
         >
-          Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+          Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)
         </div>
         <div
           className="card-footer"
@@ -111,7 +109,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
           <div
             className="card-text-rating"
           >
-            4.5
+            4.54
           </div>
           <div
             className="card-like"
@@ -142,7 +140,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
         <div
           className="card-text-title"
         >
-          Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+          Harry Potter and the Goblet of Fire (Harry Potter, #4)
         </div>
         <div
           className="card-footer"
@@ -150,7 +148,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
           <div
             className="card-text-rating"
           >
-            4.5
+            4.53
           </div>
           <div
             className="card-like"
@@ -181,7 +179,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
         <div
           className="card-text-title"
         >
-          Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+          Harry Potter and the Order of the Phoenix (Harry Potter, #5)
         </div>
         <div
           className="card-footer"
@@ -189,7 +187,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
           <div
             className="card-text-rating"
           >
-            4.5
+            4.47
           </div>
           <div
             className="card-like"
@@ -220,7 +218,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
         <div
           className="card-text-title"
         >
-          Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+          Harry Potter and the Half-Blood Prince (Harry Potter, #6)
         </div>
         <div
           className="card-footer"
@@ -228,7 +226,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
           <div
             className="card-text-rating"
           >
-            4.5
+            4.54
           </div>
           <div
             className="card-like"
@@ -259,7 +257,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
         <div
           className="card-text-title"
         >
-          Harry Potter and the Sorcerers Stone (Harry Potter, #1)
+          Harry Potter and the Deathly Hallows (Harry Potter, #7)
         </div>
         <div
           className="card-footer"
@@ -267,7 +265,7 @@ exports[`GroupBookCards should render Group books card 1`] = `
           <div
             className="card-text-rating"
           >
-            4.5
+            4.62
           </div>
           <div
             className="card-like"
